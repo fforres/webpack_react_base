@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:title" content="Open Salary - Transparentando la industria de software">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://example.com">
+    <meta property="og:description" content=" - ">
+    <meta property="og:image" content="//">
+    <meta property="fb:app_id" content="//">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="http://example.com">
+    <meta name="twitter:creator" content="@fforres">
+    <meta name="twitter:title" content="Open Salary - Transparentando la industria de software">
+    <meta name="twitter:description" content=" - ">
+    <meta name="twitter:image" content="//">
+    <title>Open Salary</title>
+    <style media="screen" id="body">
+      body {
+        min-height: 100vh;
+        margin: 0;
+        background: darkgrey;
+        background-color: darkgrey;
+        background-image: darkgrey;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+    <style id="loader">
+      .centerer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+      }
+      .centerer h1 {
+        font-family: arial;
+        font-size: 2.4em;
+        color: white;
+      }
+      .spinner {
+        width: 50vh;
+        height: 50vh;
+        max-width: 8em;
+        max-height: 8em;
+      }
+
+      .double-bounce1, .double-bounce2 {
+        width: 50vh;
+        height: 50vh;
+        max-width: 8em;
+        max-height: 8em;
+        border-radius: 50%;
+        margin: auto auto;
+        background-color: #fff;
+        opacity: 0.6;
+        position: fixed;
+        -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+        animation: sk-bounce 2.0s infinite ease-in-out;
+      }
+
+      .double-bounce2 {
+        -webkit-animation-delay: -1.0s;
+        animation-delay: -1.0s;
+      }
+
+      @-webkit-keyframes sk-bounce {
+        0%, 100% { -webkit-transform: scale(0.0) }
+        50% { -webkit-transform: scale(1.0) }
+      }
+
+      @keyframes sk-bounce {
+        0%, 100% {
+          transform: scale(0.0);
+          -webkit-transform: scale(0.0);
+        } 50% {
+          transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="centerer">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
