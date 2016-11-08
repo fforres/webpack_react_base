@@ -1,0 +1,97 @@
+@keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.header {
+  opacity: 0;
+  animation: fadein 2s;
+  animation-fill-mode: forwards;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+.textsContainer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.header:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url(./water1080.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  width: 100%;
+  height: 100%;
+
+  filter: blur(2px) grayscale(60%);
+}
+
+
+
+.left {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 3em;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.right {
+  flex-basis: 0;
+  flex-grow: 2;
+  padding: 3em;
+  text-align: right;
+  text-justify: inter-word;
+}
+.text {
+  background-color: rgb(211, 211, 211);
+  background-color: rgba(211, 211, 211, 0.7);
+}
+
+.loginButton {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 530px) {
+  .textsContainer {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .left {
+    flex-basis: auto;
+    flex-grow: 0;
+  }
+  .right {
+    flex-basis: auto;
+    flex-grow: 0;
+  }
+
+}

@@ -4,6 +4,7 @@ import React from 'react';
 import 'normalize.css/normalize.css';
 import './css/font-awesome.min.css';
 import './css/fonts.css';
+import './css/main.css';
 
 import App from './components/App';
 import js from './js';
